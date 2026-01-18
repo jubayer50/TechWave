@@ -24,14 +24,19 @@
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* main style */
+
 /* header related style */
 header {
   background-color: #1a0b2e;
 }
 
 .navbar {
-  border-bottom: 2px solid #412567;
+  border-bottom: 1px solid #412567;
 }
 
 /* navbar related style */
@@ -70,6 +75,88 @@ header {
   display: none;
 }
 
+/* banner-section style */
+#banner-section {
+  background-image: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.banner-container {
+  padding: 100px 0;
+}
+
+.hero-circle {
+  position: relative;
+  max-width: 350px;
+  max-height: 350px;
+  margin: 0 auto 40px;
+}
+
+.hero-circle::before {
+  content: "NEW";
+  background-color: #00ff88;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #1a0b2e;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  top: 50px;
+  right: -250px;
+  border: 0;
+}
+
+.mic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25%;
+  margin-left: -16.71%;
+}
+
+.banner-content {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner-content h2 {
+  font-size: 3.875rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.banner-content P {
+  color: #ffffff;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.banner-content .banner-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content .banner-btn i {
+  margin-right: 8px;
+}
+
+.btn-s {
+  padding: 12px 20px;
+  border-radius: 50px;
+  background: none;
+  font-weight: 600;
+  border: 1px solid;
+  color: #00ff88;
+  cursor: pointer;
+}
+
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   .nav-container {
@@ -96,6 +183,54 @@ header {
     font-size: 24px;
     color: #ffffff;
   }
+
+  /* banner-section style */
+  #banner-section {
+    background-size: 900px;
+    background-position: top;
+    object-fit: fill;
+  }
+
+  .banner-container {
+    padding: 40px 0;
+  }
+
+  .hero-circle::before {
+    top: 30px;
+    right: -130px;
+  }
+
+  .hero-circle {
+    width: 200px;
+    margin-bottom: 24px;
+  }
+
+  .mic {
+    width: 46px;
+    top: 50%;
+    height: 50%;
+    margin-top: -29px;
+    margin-left: -23px;
+  }
+
+  .banner-content {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+  }
+
+  .banner-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+
+  .banner-content P {
+    max-width: 400px;
+    margin: 0 auto 24px;
+  }
 }
 
 /* responsive for medium device */
@@ -110,5 +245,12 @@ header {
 
   .nav-container .menu-bar {
     gap: 22px;
+  }
+
+  /* banner-section style */
+  #banner-section {
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover;
   }
 }
