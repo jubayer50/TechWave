@@ -275,6 +275,129 @@ header {
   grid-row: span 1;
 }
 
+/* featured-episodes section */
+#featured-episodes {
+  background-color: #1a0b2e;
+  padding: 120px 10px;
+}
+
+.featured-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.iframe-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 30px;
+}
+
+.iframe-card iframe {
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  display: block;
+}
+
+.iframe-description {
+  background-color: #250d44;
+  padding: 24px;
+  border-radius: 0 0 24px 24px;
+}
+
+.iframe-description h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.iframe-description h3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.iframe-description p {
+  color: #ffffff85;
+  margin-bottom: 12px;
+}
+
+.iframe-description span {
+  font-weight: 600;
+  color: #00ff88;
+}
+
+.iframe-description span i {
+  margin-right: 6px;
+}
+
+/* meet host section include featured section */
+.meet-container {
+  margin-top: 120px;
+}
+
+.meet-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.meet-host-box {
+  background-color: #250d44;
+  padding: 40px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.meet-host-box .host-img {
+  flex-shrink: 0;
+}
+
+.host-content h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.host-content p {
+  margin-bottom: 16px;
+  color: #ffffff85;
+}
+
+.host-content ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-content ul li {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  outline: 1px solid #ffffff85;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.host-content ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+.host-content ul li a img {
+  width: 20px;
+}
+
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
   .nav-container {
@@ -427,6 +550,78 @@ header {
     grid-column: span 1;
     grid-row: span 1;
   }
+
+  /* featured-episodes related style */
+  #featured-episodes {
+    padding: 40px 20px;
+  }
+
+  .featured-container h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+
+  .iframe-boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
+  .iframe-card iframe {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .iframe-description {
+    padding: 20px;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .iframe-description h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .iframe-description p {
+    margin-bottom: 12px;
+  }
+
+  /* meet related style */
+  .meet-container {
+    margin-top: 60px;
+  }
+
+  .meet-container h2 {
+    font-size: 2rem;
+  }
+
+  .meet-host-box {
+    background-color: #250d44;
+    padding: 24px;
+    border-radius: 16px;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .host-content {
+    text-align: center;
+  }
+
+  .host-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .host-content ul {
+    justify-content: center;
+  }
+
+  .host-content ul li {
+    width: 30px;
+    height: 30px;
+  }
+
+  .host-content ul li a img {
+    width: 15px;
+  }
 }
 
 /* responsive for medium device */
@@ -481,28 +676,27 @@ header {
     font-size: 1.375rem;
   }
 
-  .one {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .two {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .three {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .four {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
+  .one,
+  .two,
+  .three,
+  .four,
   .five {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
+  }
+
+  /* featured related style */
+  #featured-episodes {
+    padding: 70px 20px;
+  }
+
+  .iframe-boxes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 26px;
+  }
+
+  .iframe-card-3 {
+    grid-column: span 2;
   }
 }
