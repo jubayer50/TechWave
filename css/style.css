@@ -28,6 +28,10 @@ img {
   max-width: 100%;
 }
 
+p {
+  line-height: 1.5;
+}
+
 /* main style */
 
 /* header related style */
@@ -68,7 +72,7 @@ header {
 
 .nav-container .menu-bar li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff95;
 }
 
 .nav-container .nav-bar {
@@ -131,7 +135,7 @@ header {
 }
 
 .banner-content P {
-  color: #ffffff;
+  color: #ffffff85;
   margin-bottom: 24px;
   line-height: 1.5;
 }
@@ -155,6 +159,54 @@ header {
   border: 1px solid;
   color: #00ff88;
   cursor: pointer;
+}
+
+/* podcast-section related style */
+#podcast-section {
+  background-color: #1a0b2e;
+  padding: 50px 0;
+}
+
+.podcast-content {
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff10;
+}
+
+.podcast-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.podcast-content p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  color: #ffffff85;
+}
+
+.podcast-info {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.podcast-card {
+  text-align: center;
+}
+
+.podcast-card h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: #00ff88;
+}
+
+.podcast-card p {
+  color: #ffffff85;
+  text-transform: uppercase;
 }
 
 /* responsive for mobile device */
@@ -231,6 +283,34 @@ header {
     max-width: 400px;
     margin: 0 auto 24px;
   }
+
+  /* podcast-section related style */
+  #podcast-section {
+    padding: 40px 0;
+  }
+
+  .podcast-content {
+    padding: 0 20px;
+  }
+
+  .podcast-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .podcast-content p {
+    padding-bottom: 40px;
+  }
+
+  .podcast-info {
+    padding-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .podcast-card h2 {
+    font-size: 2.5rem;
+  }
 }
 
 /* responsive for medium device */
@@ -252,5 +332,16 @@ header {
     background-size: 100%;
     background-position: center;
     object-fit: cover;
+  }
+
+  /* podcast-section related style */
+  .podcast-content {
+    padding: 0 20px;
+  }
+
+  .podcast-info {
+    padding-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
   }
 }
